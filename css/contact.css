@@ -1,0 +1,58 @@
+.grid {
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    grid-gap: 10px;
+
+    background-color: #111113;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 20px;
+    
+}
+
+.contact {
+    display: grid;
+    margin: auto;
+    font: 1em sans-serif;
+    grid-column: auto;
+    grid-column-start: 1;
+    max-width: 25rem;
+    text-align: center;
+    color: white;
+    
+}
+
+h1 {
+    margin: auto;
+}
+
+
+.socialImg {
+    width: 3em;
+    height: 3em;
+}
+
+li {
+    display: inline-flex;
+    column-gap: 3em;
+}
+
+.adress {
+    grid-row-start: 1;
+}
+
+.social {
+    grid-row-start: 2;
+}
+
+#mapid {
+    margin: auto;
+    grid-column-start: 2;
+    width: 50rem;
+    height: 30rem;
+
+}
+

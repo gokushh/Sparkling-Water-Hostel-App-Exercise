@@ -1,0 +1,91 @@
+body{
+    margin:0px;
+    font-family: sans-serif;
+}
+
+/* onde a tabela esta inserida */
+section{
+    width:100%;
+}
+
+.tabelinha {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+
+/* Contem a tabela e a paginacao */
+section .container{
+    max-width: 1366px;
+    margin: 0px auto;
+    padding: 20px 0px;
+}
+
+table{
+    width: 100%;
+    border: none;
+    border-spacing: 0px;
+}
+
+table tr th{
+    border-bottom: solid 2px black;
+}
+
+table tr td{
+    border: none;
+    border-bottom: solid thin gray;
+    
+}
+
+table tr td, table tr th{
+    padding: 10px;
+    text-align: left;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: #1d1919;
+}
+
+table tbody tr:hover{
+    background-color: rgb(49, 62, 65);
+}
+
+/* ------ PAGINACAO ------ */
+.pagination{
+    display: flex;
+    padding: 10px;
+    float: right;
+    padding-right: 0px;
+    margin-top: 20px;
+}
+
+.pagination p{
+    margin: 10px;
+}
+
+.pagination a{
+    border: solid 1px #bababa;
+    padding: 8px 16px;
+    text-decoration: none;
+    color:black;
+}
+
+.pagination a:hover{
+    background-color: rgb(49, 62, 65);    
+}
+
+.pagination span{
+    font-weight: bold;
+}
+
+/* ------ PESQUISA ------ */
+
+#searchInput, select {
+    width: 30%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    margin-left: 0%;
+    border-radius: 10px;
+  }

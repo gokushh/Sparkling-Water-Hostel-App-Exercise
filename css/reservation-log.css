@@ -1,0 +1,130 @@
+.reservationGrid {
+    background-color: #111113;
+    margin: auto;
+    margin-top: 1rem;
+    padding-top: 1px;
+    width: 80%;    
+    height: 110rem;
+    border-radius: 30px;
+}
+
+.reservationInfo {
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    row-gap: 20px;
+}
+
+.label1 {
+    width: clamp(15rem, 35rem, 35rem);
+}
+
+/* Line 2 */
+.labelEmail {
+    width: 44rem;
+}
+
+.label2 {
+    width: 25rem;
+}
+
+/* Line 3 */
+.label3 {
+    width: 40rem
+}
+
+.label4 {
+    width: 25rem;
+}
+
+.label5 {
+    width: 10rem;
+}
+
+.line1 {
+    grid-row-start: 1;
+    display: flex;
+    justify-content: space-around;
+}
+.line2 {
+    grid-row-start: 2;
+    display: flex;
+    justify-content: space-around;
+}
+.line3 {
+    grid-row-start: 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Linha divisoria */
+hr {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.gridImg {
+    display: grid;
+}
+
+/* Quartos */
+.gridImg > img {
+    grid-column-start: 1;
+    width: 60rem;
+    border-radius: 2rem;
+}
+
+.images {
+    margin: auto;
+    padding-left: 10%;
+    align-items: center;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.images button{
+    display: inline-block;
+    width: 14rem;
+    text-align: center;
+    border-radius: 2rem;
+    border: 0px;
+}
+
+.images button img {
+    border-radius: 2rem;
+}
+
+.paymentImgs {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.paymentImgs button {
+    width: 10rem;
+    border: none;
+    background: transparent;
+}
+
+#submitResevation {
+    background-color: #111113; 
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 10px;
+    width: 30%;
+    height: 5rem;
+    border-radius: 4rem;
+}
+
+.lineF {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}

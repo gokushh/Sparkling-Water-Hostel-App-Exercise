@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="pt_BR">
+
+<head>
+    <title>Contact</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+    <link rel="stylesheet" type="text/css" href="css/login&register.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/animation_color.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!--MAPA-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html"><img src="imgs/logo.png" alt=""></a>
+        <nav class="navMenu">
+            <ul class="menu">
+                <li><a class="homeButton" href="home_grid.html">Home</a></li>
+                <li><a class="reserveButton" href="sign-in.html">Reservation</a></li>
+                <li><a href="./rooms.html">Rooms</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a class="signIn" href="sign-in.html">SignIn</a></li>
+                <li><a class="signUp" href="sign-up.html">SignUp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--validacao de login para exibicao da pagina-->
+    <script type="text/javascript" src="js/login_buttons.js"></script>
+
+    <main>
+        <!--grid principal-->
+        <div class="grid">
+            <!--grid contato-->
+            <div class="contact">
+
+                <div class="adress">
+                    <h1>Sparkling Water Hostel</h1>
+                    <address style="font-size: 1.5rem;">
+                        main st. 1000. Caxambu, <br> 
+                        Minas Gerais, 01310-100, Brazil<br>
+                        +55 (11) 06351-4125 <br>
+                        Agency: 900 Paulista Avenue, São Paulo, SP<br>
+                    </address>
+                    <br>
+                </div>
+
+                <div class="social">
+                    <h3>Contact:</h3>
+                    <br>
+                    <!--paragrafo do contato, usar .contact p-->
+                    <p class="contact_info">
+                        <li>
+                            <ul><a href=""><img class="socialImg" src="imgs/whatsapp.svg" alt="Whatsapp logo"></a></ul>
+                            <ul><a href=""><img class="socialImg" src="imgs/facebook.svg" alt="Facebook logo"></a></ul>
+                            <ul><a href=""><img class="socialImg" src="imgs/instagram.svg" alt="Instagram logo"></a></ul>
+                            <ul><a href=""><img class="socialImg" src="imgs/google-plus.svg" alt="Google Plus logo"></a></ul>
+                        </li>
+
+                    </p>
+                </div>
+
+            </div>
+
+
+
+            <div id="mapid"></div>
+            <script>
+                const map = L.map('mapid').setView([-21.9783168, -44.9347435], 16); //coordenadas e zoom
+
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+                //criando e adcionando o marcador
+                L.marker([-21.9783168, -44.9347435])
+                    .addTo(map)
+                    .bindPopup('Sparkling Water Hostel');
+
+            </script>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>
+                    Sparkling Water Hostel. Sparkling Water main st. 1000. Caxambu - MG</h2>
+            </div>
+            <div class="content">
+                <div class="bottom">
+                    <center>
+                        <span class="credit">Created By <a href="#">Denis Coutinho e Breno Gusson</a> | </span>
+                        <span class="far fa-copyright"></span> 2020 All rights reserved.
+                    </center>
+                </div>
+            </div>
+    </footer>
+
+
+
+</body>
+
+</html>

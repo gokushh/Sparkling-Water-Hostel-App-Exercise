@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="pt_BR">
+
+<head>
+    <title>Sign Up</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+    <link rel="stylesheet" type="text/css" href="css/login&register.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/animation_color.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+
+<body>
+    
+    <header class="header">
+        <a href="index.html"><img src="imgs/logo.png" alt=""></a>
+        <nav class="navMenu">
+            <ul class="menu">
+                <li><a class="homeButton" href="home_grid.html">Home</a></li>
+                <li><a class="reserveButton" href="sign-in.html">Reservation</a></li>
+                <li><a href="./rooms.html">Rooms</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a class="signIn" href="sign-in.html">SignIn</a></li>
+                <li><a class="signUp" href="sign-up.html">SignUp</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--
+                Se (login = 1) -> remove botao sign in e up, adciona botao log out
+                -->
+    <script type="text/javascript" src="js/login_buttons.js"></script>
+
+    
+    <main>
+        <form class="formLogin" action="#">
+            <div class="card">
+                <div class="card-top">
+                    <img class="imglogin" src="/imgs/icone_user.png">
+                    <h3 class="title">Sign Up</h3>
+                </div>
+                <div class="card-group">
+                    <label>Name</label>
+                    <input type="text" name="nome" placeholder="Digite seu Nome" required>
+                    <label>Last name</label>
+                    <input type="text" name="sobrenome" placeholder="Digite seu Sobrenome" required>
+                    <label>Email</label>
+                    <input type="text" name="email" placeholder="Digite seu Email" required>
+                    <label>Phone Number</label>
+                    <input type="text" name="phone" placeholder="Digite seu Telefone" required>
+                    <label>Address</label>
+                    <input type="text" name="adress" placeholder="Digite seu Endereço" required>
+                    <label>Country</label>
+                    <input type="text" name="country" placeholder="Digite sua Cidade" required>
+                    <label>State</label>
+                    <input type="text" name="state" placeholder="Digite seu Estado" required>
+                </div>
+                <div class="card-group">
+                    <label>Senha</label>
+                    <input type="password" name="senha" placeholder="Digite sua senha" required>
+                </div>
+                <div class="card-group">
+                    <label><input type="checkbox">Lembre-me</label>
+                </div>
+                <div class="card-group btn">
+                    <button type="submit">REGISTER</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <!--A ideia e pegar todos esses dados e passar para variaveis locais vetores, se der armazenando como um objeto-->
+
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>
+                    Sparkling Water Hostel. Sparkling Water main st. 1000. Caxambu - MG</h2>
+            </div>
+            <div class="content">
+                <div class="bottom">
+                    <center>
+                        <span class="credit">Created By <a href="#">Denis Coutinho e Breno Gusson</a> | </span>
+                        <span class="far fa-copyright"></span> 2020 All rights reserved.
+                    </center>
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+/* Acessado por todos menos index, pois ja tem uma imagem de fundo */
+body{
+    background-image: url(/imgs/background2.png);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 200px;
+    background: linear-gradient(-45deg, #084177, #687466, #241d1b, #3a3734); /*Fundo com cor gradiente*/
+    background-size: 160% 160%; /*Tamanho do gradiente na tela*/
+    animation: colors 10s ease-in-out infinite no-repeat; /*Animação das cores no background*/
+}

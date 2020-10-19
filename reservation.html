@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="pt_BR">
+
+<head>
+    <title>Reservation</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+    <link rel="stylesheet" type="text/css" href="css/login&register.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/animation_color.css">
+    <link rel="stylesheet" type="text/css" href="css/reservation.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="./css/reservation-log.css">
+    
+</head>
+
+
+<body>
+    
+    <header class="header">
+        <a href="index.html"><img src="imgs/logo.png" alt=""></a>
+        <nav class="navMenu">
+            <ul class="menu">
+                <li><a class="homeButton" href="home_grid.html">Home</a></li>
+                <!-- Quando logar, vai designar o botao para a pagina de login. Apos logar, muda -->
+                <li><a class="reserveButton" href="sign-in.html">Reservation</a></li>
+                <li><a href="./rooms.html">Rooms</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a class="signIn" href="sign-in.html">SignIn</a></li>
+                <li><a class="signUp" href="sign-up.html">SignUp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script type="text/javascript" src="js/login_buttons.js"></script>
+
+    <main>
+    <div class="reservationGrid">
+        <h1>Reservation</h1>
+        <h2  style="margin-left: 10%;">Personal informations</h2><br>
+        <div class="reservationInfo">
+            <div class="line1">
+                <label>First name   <input class="label1" type="text"></label>
+                <label>Second name   <input class="label1" type="text"></label>
+            </div>
+            <div class="line2">
+                <label>Email   <input class="labelEmail" type="text"></label>
+                <label>Phone number   <input class="label2" type="text"></label>
+            </div>
+            <div class="line3">
+                <label>Address   <input class="label3" type="text"></label>
+                <label>Country   <input class="label4" type="text"></label>
+                <label>State   <input class="label5" type="text"></label>
+            </div>
+            
+            <hr>
+
+                <h2>Rooms</h2>
+                <p style="font-size: 25px;">Choose your preference room:</p>
+
+                <div class="gridImg">
+
+                    <img src="./imgs/hostel8.jpg" alt="Room 1">
+                    
+                    <div class="images">
+                        <button>
+                            <img src="./imgs/hostel8.jpg" alt="">
+                        </button>
+                        <button>
+                            <img src="./imgs/hostel7.jpg" alt="">
+                        </button>
+                        <button>
+                            <img src="./imgs/hostel4.jpg" alt="">
+                        </button>
+                        <button>
+                            <img src="./imgs/hostel3.jpg" alt="">
+                        </button>
+                        <button>
+                            <img src="./imgs/hostel2.jpg" alt="">
+                        </button>
+                        <button>
+                            <img src="./imgs/hostel1.jpg" alt="">
+                        </button>
+
+                    </div>
+                </div>
+                
+                <hr>
+
+                <h2>Payment</h2>
+                <div class="paymentType">
+                    <div class="paymentImgs">
+                        <button>
+                            <img src="./imgs/a1.svg" alt="">
+                        </button>
+                        <button>
+                            <img src="./imgs/a2.svg" alt="">
+                        </button>
+                        <button>
+                            <img src="./imgs/a3.svg" alt="">
+                        </button>
+                        <button>
+                            <img src="./imgs/a4.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <p style="font-size: 150%;">The reservation must be payd on check-in.</p>
+                <div class="lineF">
+                    <button id="submitResevation" type="submit">Reserve</button>
+                </div>
+            </div>
+    </div>
+    </main>
+
+    
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>
+                    Sparkling Water Hostel. Sparkling Water main st. 1000. Caxambu - MG</h2>
+            </div>
+            <div class="content">
+                <div class="bottom">
+                    <center>
+                        <span class="credit">Created By <a href="#">Denis Coutinho e Breno Gusson</a> | </span>
+                        <span class="far fa-copyright"></span> 2020 All rights reserved.
+                    </center>
+                </div>
+            </div>
+    </footer>
+
+</body>
+
+</html>

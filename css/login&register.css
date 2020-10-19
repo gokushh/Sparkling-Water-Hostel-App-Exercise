@@ -1,0 +1,79 @@
+.card {
+    box-shadow: 1px 1px 5px #ccc;
+    /*sombra do card*/
+    background-color: white;
+    padding: 30px;
+    /*Espaçamento da borda da página*/
+    border-radius: 5px;
+    /*Arredondamento do card*/
+}
+
+.card-top {
+    text-align: center;
+}
+
+.card-group {
+    margin-bottom: 10px;
+}
+
+.card-group>label {
+    width: 100%;
+    color: slategrey;
+    display: block;
+    padding: 3px;
+}
+
+.card-group>input {
+    border-radius: 5px;
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+    /*Espaçamento do placeholder*/
+}
+
+.card-group>button {
+    background-image: linear-gradient(to right, black, grey);
+    /*define uma cor com degradê do botão*/
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px;
+    border: 0px;
+    color: white;
+    outline: 0;
+    /*retira a borda quadrada no botão*/
+}
+
+.btn button:hover {
+    background-image: linear-gradient(to right, black, white);
+}
+
+.formLogin {
+    width: 400px;
+    /*Tamanho do card*/
+    margin: auto;
+    /*Card centralizado na tela*/
+    padding-top: 20px;
+    /*Espaçamento do topo da página*/
+
+}
+
+.imglogin {
+    border-radius: 50px;
+    margin: 0 auto;
+    /*imagem centralizada*/
+}
+
+.title {
+    color: black;
+}
+
+/*Sign in as administrator ... */
+.logtxt>a {
+    color: black;
+    font-size: 15px;
+}
+
+.a2 {
+    position: relative;
+    left: 120px;
+}

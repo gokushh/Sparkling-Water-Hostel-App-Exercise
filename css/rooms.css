@@ -1,0 +1,58 @@
+.room1 {
+    display: grid;
+    background-color: #111113;
+    width: 70%;
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 2rem;
+}
+
+.room1 > img {
+    width: 45rem;
+    padding: 2rem 2rem;
+    grid-column-start: 1;
+}
+
+.roomDescription {
+    padding: 2rem 1rem;
+    padding-top: 2rem;
+    grid-column-start: 2;
+}
+
+.roomDescription > h1 {
+    grid-row-start: 1;
+}
+
+.roomDescription > p {
+    grid-row-start: 2;
+    margin-top: 7rem;
+    padding-bottom: 1rem;
+}
+.footerP {
+    display: grid;
+    grid-row-start: 3;
+    margin-top: 8rem;
+    padding-right: 3em;
+    padding-top: 3rem;
+}
+.price {
+    justify-content: center;
+}
+.price > p {
+    grid-column-start: 1;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+.buttonPart {
+    grid-column-start: 2;
+    justify-content: center;
+}
+.buttonPart > button {
+    grid-column-start: 2;
+    background-color: #5c3333; 
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    height: 5rem;
+    border-radius: 4rem;
+}

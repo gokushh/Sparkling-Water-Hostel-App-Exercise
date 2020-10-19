@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="pt_BR">
+
+<head>
+    <title>Guests Control</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+    <link rel="stylesheet" type="text/css" href="./css/login&register.css">
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <link rel="stylesheet" type="text/css" href="./css/animation_color.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Tabela -->
+    <link href="./css/table-style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./js/pagination.class.js"></script>
+    <script type="text/javascript" src="./js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html"><img src="imgs/logo.png" alt=""></a>
+
+        <nav class="navMenu">
+            <ul class="menu">
+                <li><a class="homeButton" href="home_grid.html">Home</a></li>
+                <li><a class="reserveButton" href="sign-in.html">Reservation</a></li>
+                <li><a href="./rooms.html">Rooms</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a class="signIn" href="sign-in.html">SignIn</a></li>
+                <li><a class="signUp" href="sign-up.html">SignUp</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--validacao de login para exibicao da pagina-->
+    <script type="text/javascript" src="js/login_buttons.js"></script>
+
+    <main>
+        <h1 style="margin-right: 70%; margin-bottom: 5px; margin-top: 1em;">Guest list</h1>
+        <div class="tabelinha">
+            <section>
+                <div class="container">
+                    <!-- Label de pesquisa -->
+                    <input type="text" id="searchInput" onkeyup="pagination.searchOnList()" placeholder="Search"> 
+                    <!-- Opcoes de pesquisa
+                    <select name="select" id="select">
+                        <option value="0">Id</option>
+                        <option value="1">First Name</option> 
+                        <option value="2">Last Name</option> 
+                        <option value="3">Email</option> 
+                        <option value="4">Address</option> 
+                        <option value="5">Country</option> 
+                        <option value="6">State</option> 
+                        <option value="7">Phone Number</option> 
+                    </select> -->
+                    <!-- DADOS DA TABELA -->
+                    <table id="datatable" style="font: black;">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                                <th>Address</th>
+                                <th>Country</th>
+                                <th>State</th>
+                                <th>Phone Number</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Jay</td>
+                                <td>Gatsby</td>
+                                <td>jay@gmail.com</td>
+                                <td>1187  Fleming Street</td>
+                                <td>United States</td>
+                                <td>AL</td>
+                                <td>+1-205-555-0178</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Holden</td>
+                                <td>Caulfield</td>
+                                <td>holden@mit.edu</td>
+                                <td>3998  Davis Lane</td>
+                                <td>United States</td>
+                                <td>CO</td>
+                                <td>+1-303-555-0137</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Humbert</td>
+                                <td>Humbert</td>
+                                <td>humbert@gmail.com</td>
+                                <td>499  McKinley Avenue</td>
+                                <td>United States</td>
+                                <td>CO</td>
+                                <td>+1-303-555-0156</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Leopold</td>
+                                <td>Bloom</td>
+                                <td>bloom@blogs.com</td>
+                                <td>4239  Marigold Lane</td>
+                                <td>United States</td>
+                                <td>FL</td>
+                                <td>+1-561-555-0145</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Rabbit</td>
+                                <td>Angstrom</td>
+                                <td>angstrom@hotmail.com</td>
+                                <td>4306  Jacobs Street</td>
+                                <td>United States</td>
+                                <td>FL</td>
+                                <td>+1-561-555-0135</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Sherlock</td>
+                                <td>Holmes</td>
+                                <td>holmes@aol.com</td>
+                                <td>1395  Dola Mine Road</td>
+                                <td>United States</td>
+                                <td>AK</td>
+                                <td>+1-907-555-0187</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Atticus</td>
+                                <td>Finch</td>
+                                <td>finch@hotmail.com</td>
+                                <td>3566  Parkway Drive</td>
+                                <td>United States</td>
+                                <td>AZ</td>
+                                <td>+1-480-555-0198</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Molly</td>
+                                <td>Bloom</td>
+                                <td>molly@microsoft.com</td>
+                                <td>4206  Mulberry Avenue</td>
+                                <td>United States</td>
+                                <td>AR</td>
+                                <td>+1-501-555-0120</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Stephen</td>
+                                <td>Dedalus</td>
+                                <td>dedalus@apple.com</td>
+                                <td>359  Hide A Way Road</td>
+                                <td>United States</td>
+                                <td>CA</td>
+                                <td>+1-510-555-0183</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Lily</td>
+                                <td>Bart</td>
+                                <td>bart@gmail.com</td>
+                                <td>639  Airplane Avenue</td>
+                                <td>United States</td>
+                                <td>CT</td>
+                                <td>+1-860-555-0154</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Holly</td>
+                                <td>Golightly</td>
+                                <td>golightly@gmail.com</td>
+                                <td>3786  Scenic Way</td>
+                                <td>United States</td>
+                                <td>IL</td>
+                                <td>+1-847-555-0127</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Gregor</td>
+                                <td>Samsa</td>
+                                <td>samsa@yahoo.com</td>
+                                <td>1833  Don Jackson Lane</td>
+                                <td>United States</td>
+                                <td>HI</td>
+                                <td>+1-808-555-0162</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>Aureliano</td>
+                                <td>Buendia</td>
+                                <td>buendia@yahoo.com</td>
+                                <td>2195  Eagle Street</td>
+                                <td>United States</td>
+                                <td>IL</td>
+                                <td>+1-847-555-0151</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>Clarissa</td>
+                                <td>Dalloway</td>
+                                <td>dalloway@gmail.com</td>
+                                <td>1632  Pearlman Avenue</td>
+                                <td>United States</td>
+                                <td>KS</td>
+                                <td>+1-785-555-0189</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>Ignatius</td>
+                                <td>Reilly</td>
+                                <td>reilly@gmail.com</td>
+                                <td>1632  Pearlman Avenue</td>
+                                <td>United States</td>
+                                <td>WI</td>
+                                <td>+1-920-555-0109</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>George</td>
+                                <td>Smiley</td>
+                                <td>smiley@gmail.com</td>
+                                <td>2436  Williams Lane</td>
+                                <td>United States</td>
+                                <td>KS</td>
+                                <td>+1-785-555-0132</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>Winnie</td>
+                                <td>Pooh</td>
+                                <td>pooh@yahoo.com</td>
+                                <td>3529  Cheshire Road</td>
+                                <td>United States</td>
+                                <td>CT</td>
+                                <td>+1-860-555-0146</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>Bigger</td>
+                                <td>Thomas</td>
+                                <td>thomas@hotmail.com</td>
+                                <td>3091  Doctors Drive</td>
+                                <td>United States</td>
+                                <td>CA</td>
+                                <td>+1-510-555-0112</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>Nick</td>
+                                <td>Adams</td>
+                                <td>adams@gmail.com</td>
+                                <td>3199  Ryan Road</td>
+                                <td>United States</td>
+                                <td>SD</td>
+                                <td>+1-605-555-0121</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>Scarlett</td>
+                                <td>OHara</td>
+                                <td>ohara@gmail.com</td>
+                                <td>3502  Station Street</td>
+                                <td>United States</td>
+                                <td>CA</td>
+                                <td>+1-510-555-0187</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>Scout</td>
+                                <td>Finch</td>
+                                <td>finch@gmail.com</td>
+                                <td>2552  Cedar Street</td>
+                                <td>United States</td>
+                                <td>AR</td>
+                                <td>+1-501-555-0132</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>Philip</td>
+                                <td>Marlowe</td>
+                                <td>marlowe@hotmail.com</td>
+                                <td>2810  Polk Street</td>
+                                <td>United States</td>
+                                <td>AZ</td>
+                                <td>+1-480-555-0147</td>
+                            </tr>
+                            <tr>
+                                <td>23</td>
+                                <td>Cosimo</td>
+                                <td>di Rondo</td>
+                                <td>dirondo@gmail.com</td>
+                                <td>4772  Pinewood Drive</td>
+                                <td>United States</td>
+                                <td>AK</td>
+                                <td>+1-907-555-0178</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+        
+                    <!-- BOTOES DE PAGINACAO -->
+                    <div id="pagination" class="pagination">
+                        <p class="pagination-label">
+                            Viewing <span>1-10</span> of <span>36</span>
+                        </p>
+                        <a href="#" class="previous round">&#8249;</a>
+                        <a href="#" class="next round">&#8250;</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>
+                    Sparkling Water Hostel. Sparkling Water main st. 1000. Caxambu - MG</h2>
+            </div>
+            <div class="content">
+                <div class="bottom">
+                    <center>
+                        <span class="credit">Created By <a href="#">Denis Coutinho e Breno Gusson</a> | </span>
+                        <span class="far fa-copyright"></span> 2020 All rights reserved.
+                    </center>
+                </div>
+            </div>
+    </footer>
+
+
+</body>
+
+</html>

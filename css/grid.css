@@ -1,0 +1,28 @@
+.grid-container{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 900px 900px;
+    padding: 20px;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.grid2 {
+    grid-column-start: 2;
+}
+
+.imagem1 {
+    background-color: black;
+    width: 90%;
+}
+
+.contactBtn {
+    margin: auto;
+    display: inline-block;
+    margin-left: 30%;
+    width: 30%;
+    height: 5%;
+    background-color: black;
+    border-radius: 40px;
+    font-size: 1em;
+    cursor: pointer;
+}
